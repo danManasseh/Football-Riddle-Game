@@ -1,0 +1,303 @@
+
+[
+  {
+    "teammates": ["Messi", "Neymar", "Gerrard", "Milner", "Núñez"],
+    "answers": ["Luis Suárez", "Luis", "Suárez"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Rooney", "Pirlo", "Benzema", "Varane"],
+    "answers": ["Patrice Evra", "Patrice", "Evra"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Mbappé", "Neymar", "Pogba", "Zlatan", "Ramos"],
+    "answers": ["Ángel Di María", "Ángel", "Di María"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Bale", "Modrić", "Kroos", "Marcelo"],
+    "answers": ["Sergio Ramos", "Sergio", "Ramos"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Neymar", "Messi", "Iniesta", "Xavi", "Piqué"],
+    "answers": ["Jordi Alba", "Jordi", "Alba"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Benzema", "Marcelo", "Khedira", "Özil"],
+    "answers": ["Mesut Özil", "Mesut", "Özil"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Dani Alves", "Villa", "Henry", "Xavi"],
+    "answers": ["Andrés Iniesta", "Andrés", "Iniesta"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Benzema", "Pepe", "Di María", "Xabi Alonso"],
+    "answers": ["Iker Casillas", "Iker", "Casillas"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Neymar", "Mbappé", "Thiago Silva", "Verratti", "Di María"],
+    "answers": ["Edinson Cavani", "Edinson", "Cavani"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Neymar", "Xavi", "Iniesta", "Piqué"],
+    "answers": ["Sergio Busquets", "Sergio", "Busquets"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Benzema", "Isco", "Modrić", "Kroos"],
+    "answers": ["Gareth Bale", "Gareth", "Bale"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Alba", "Xavi", "Iniesta", "Piqué"],
+    "answers": ["Dani Alves", "Dani", "Alves"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Neymar", "Suárez", "Henry", "Villa"],
+    "answers": ["David Villa", "David", "Villa"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Varane", "Bale", "Pepe", "Ramos"],
+    "answers": ["Karim Benzema", "Karim", "Benzema"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Xavi", "Iniesta", "Busquets", "Henry"],
+    "answers": ["Samuel Eto'o", "Samuel", "Eto'o"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Giggs", "Scholes", "Rooney", "Vidic"],
+    "answers": ["Rio Ferdinand", "Rio", "Ferdinand"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Xavi", "Iniesta", "Villa", "Neymar"],
+    "answers": ["Pedro Rodríguez", "Pedro", "Rodríguez"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Rooney", "Scholes", "Giggs", "Tevez"],
+    "answers": ["Dimitar Berbatov", "Dimitar", "Berbatov"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Messi", "Xavi", "Iniesta", "Puyol", "Ronaldinho"],
+    "answers": ["Thierry Henry", "Thierry", "Henry"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Kroos", "Modrić", "Marcelo", "Benzema"],
+    "answers": ["Luka Modrić", "Luka", "Modrić"],
+    "difficulty": "easy"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Bale", "Modrić", "Casillas", "Pepe"],
+    "answers": ["Raphaël Varane", "Raphaël", "Varane"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Di María", "Otamendi", "Agüero", "Mascherano"],
+    "answers": ["Nicolás Otamendi", "Nicolás", "Otamendi"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Pirlo", "Buffon", "Chiellini", "Bonucci"],
+    "answers": ["Paulo Dybala", "Paulo", "Dybala"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Suárez", "Piqué", "Busquets", "Coutinho"],
+    "answers": ["Philippe Coutinho", "Philippe", "Coutinho"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Hazard", "Kroos", "Benzema", "Marcelo"],
+    "answers": ["Eden Hazard", "Eden", "Hazard"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Agüero", "Tevez", "Mascherano", "Di María"],
+    "answers": ["Carlos Tevez", "Carlos", "Tevez"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Bruno Fernandes", "Nani", "Pepe", "Carvalho"],
+    "answers": ["Ricardo Carvalho", "Ricardo", "Carvalho"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Di María", "Banega", "Higuaín", "Aguero"],
+    "answers": ["Éver Banega", "Éver", "Banega"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Khedira", "Benzema", "Marcelo", "Casillas"],
+    "answers": ["Sami Khedira", "Sami", "Khedira"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Xavi", "Iniesta", "Puyol", "Henry"],
+    "answers": ["Gerard Piqué", "Gerard", "Piqué"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Benzema", "Kroos", "Modrić", "Ramos"],
+    "answers": ["Isco", "Isco", "Alarcón"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Busquets", "Alba", "Suárez", "Neymar"],
+    "answers": ["Ivan Rakitić", "Ivan", "Rakitić"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Pirlo", "Buffon", "Marchisio", "Chiellini"],
+    "answers": ["Claudio Marchisio", "Claudio", "Marchisio"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Agüero", "Otamendi", "Di María", "Mascherano"],
+    "answers": ["Sergio Agüero", "Sergio", "Agüero"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Nani", "Pepe", "Moutinho", "Patrício"],
+    "answers": ["João Moutinho", "João", "Moutinho"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Xavi", "Iniesta", "Villa", "Pedro"],
+    "answers": ["David Villa", "David", "Villa"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Modrić", "Bale", "Kroos", "Benzema"],
+    "answers": ["Keylor Navas", "Keylor", "Navas"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Ronaldinho", "Xavi", "Iniesta", "Henry"],
+    "answers": ["Deco", "Deco", "Souza"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Pepe", "Bruno Fernandes", "Nani", "João Félix"],
+    "answers": ["João Félix", "João", "Félix"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Messi", "Mascherano", "Di María", "Aguero", "Otamendi"],
+    "answers": ["Javier Mascherano", "Javier", "Mascherano"],
+    "difficulty": "medium"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Giggs", "Scholes", "Vidic", "Rooney"],
+    "answers": ["John O'Shea", "John", "O'Shea"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Ronaldinho", "Eto'o", "Xavi", "Iniesta"],
+    "answers": ["Henrik Larsson", "Henrik", "Larsson"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Zidane", "Figo", "Raúl", "Roberto Carlos"],
+    "answers": ["Ronaldo Nazário", "Ronaldo", "Nazário"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Keita", "Pedro", "Alves", "Villa"],
+    "answers": ["Seydou Keita", "Seydou", "Keita"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Nani", "Carrick", "Vidic", "Fletcher"],
+    "answers": ["Darren Fletcher", "Darren", "Fletcher"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Suárez", "Mascherano", "Piqué", "Busquets"],
+    "answers": ["Ivan Rakitić", "Ivan", "Rakitić"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Pirlo", "Buffon", "Chiellini", "Marchisio"],
+    "answers": ["Claudio Marchisio", "Claudio", "Marchisio"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Alves", "Eto'o", "Xavi", "Gudjohnsen"],
+    "answers": ["Eiður Guðjohnsen", "Eiður", "Guðjohnsen"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Deco", "Simao", "Pepe", "Nani"],
+    "answers": ["Ricardo Quaresma", "Ricardo", "Quaresma"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Zlatan", "Alves", "Xavi", "Iniesta"],
+    "answers": ["Zlatan Ibrahimović", "Zlatan", "Ibrahimović"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Rooney", "Berbatov", "Fletcher", "Evra"],
+    "answers": ["Park Ji-sung", "Park", "Ji-sung"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Ronaldinho", "Xavi", "Iniesta", "Deco"],
+    "answers": ["Rafael Márquez", "Rafael", "Márquez"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Nani", "Anderson", "Giggs", "Rooney"],
+    "answers": ["Anderson", "Anderson", "Oliveira"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Eto'o", "Touré Yaya", "Iniesta", "Henry"],
+    "answers": ["Touré Yaya", "Touré", "Yaya"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Benzema", "Varane", "James Rodríguez", "Marcelo"],
+    "answers": ["James Rodríguez", "James", "Rodríguez"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Mascherano", "Di María", "Banega", "Higuaín"],
+    "answers": ["Éver Banega", "Éver", "Banega"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Pepe", "Carvalho", "Deco", "Postiga"],
+    "answers": ["Deco", "Deco", "Souza"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Ronaldinho", "Eto'o", "Xavi", "Iniesta"],
+    "answers": ["Ronaldinho", "Ronaldinho", "Gaúcho"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Casemiro", "Marcelo", "Varane", "Isco"],
+    "answers": ["Isco", "Isco", "Alarcón"],
+    "difficulty": "hard"
+  },
+  {
+    "teammates": ["Messi", "Puyol", "Iniesta", "Ronaldinho", "Henry"],
+    "answers": ["Thiago Motta", "Thiago", "Motta"],
+    "difficulty": "hard"
+  }
+]

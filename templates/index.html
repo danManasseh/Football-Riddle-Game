@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="main">
+    <p style="font-size: 20px; padding: 0 40px">Welcome! Guess the player from their teammates.</p>
+    <div class="btn-group" role="group" aria-label="...">
+        <a href="{{ url_for('fetch_riddles', level='easy') }}" style="background-color: rgb(68, 112, 85); text-decoration: none;" class="btn-info btn-buttons"><b>EASY</b></a>
+        <a  href="{{ url_for('fetch_riddles', level = 'medium') }}" style="background-color: rgb(186, 113, 56); text-decoration: none;" class="btn-info btn-buttons"><b>MEDIUM</b></a>
+        <a href="{{ url_for('fetch_riddles', level = 'hard') }}" style="background-color: rgb(59, 57, 94); text-decoration: none;" class="btn-info btn-buttons"><b>HARD</b></a>
+    </div>
+</div>
+<div class="main-2">
+    <p style="font-size: 15px;">Select a difficulty level to Start!</p>
+    <hr style="background-color: rgb(28, 30, 33); margin:0px 30px 15px">
+    <div class="main2-ta">
+        <p>I played with {{ ", ".join(riddle.teammates) }}</p>
+    </div>
+    <div class="answer-form">
+        <form id="answer-form" class="" method="POST" action="{{ url_for('check_answer', get_id = riddle.id ) }}" autocomplete="off">
+            <input class="answer-form-input" type="text"  id="answer" placeholder="Type player name..." name="answer" autocomplete="off"
+                required>
+            <!-- <input type="hidden" id="ans_val" name="ans_val" value="{{ riddle.answers | tojson }}"> -->
+        
+            <button class="answer-form-btn" type="submit"><b>SUBMIT GUESS</b></button>
+        </form>
+    </div>
+</div>
+{% endblock %}

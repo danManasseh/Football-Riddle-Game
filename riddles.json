@@ -1,0 +1,10 @@
+[
+  {
+    "teammates": ["Messi", "Neymar", "Milner", "Gerrard", "Núñez"],
+    "answer": "Luis Suárez"
+  },
+  {
+    "teammates": ["Cristiano Ronaldo", "Rooney", "Pirlo", "Benzema", "Varane"],
+    "answer": "Patrice Evra"
+  }
+]

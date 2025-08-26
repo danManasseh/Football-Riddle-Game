@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Football Riddle Game</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="bg-gray-900 text-gray-100 flex flex-col items-center justify-center min-h-screen p-6">
+
+        <!-- Header -->
+         <div class="blueprint">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl font-bold text-green-400">⚽ Football Riddle Game</h1>
+            <p class="mt-2 text-gray-400">Guess the player from their teammates!</p>
+        </header>
+         </div>
+
+
+        <!-- Difficulty selection -->
+        <section id="difficulty-section" class="mb-10 text-center">
+            <h2 class="text-xl mb-4">Choose a difficulty</h2>
+            <div class="flex gap-4 justify-center">
+                <button class="difficulty-btn bg-green-600 hover:bg-green-700 px-6 py-3 rounded-xl font-semibold"
+                    data-difficulty="easy">Easy</button>
+                <button class="difficulty-btn bg-yellow-600 hover:bg-yellow-700 px-6 py-3 rounded-xl font-semibold"
+                    data-difficulty="medium">Medium</button>
+                <button class="difficulty-btn bg-red-600 hover:bg-red-700 px-6 py-3 rounded-xl font-semibold"
+                    data-difficulty="hard">Hard</button>
+            </div>
+        </section>
+
+        <!-- Riddle card -->
+        <section id="riddle-section" class="hidden w-full max-w-lg">
+            <div class="bg-gray-800 shadow-lg rounded-2xl p-6">
+                <h3 class="text-lg font-semibold mb-4 text-green-400">Teammates:</h3>
+                <ul id="teammates-list" class="list-disc list-inside space-y-1 text-gray-300">
+                    <!-- Teammates go here -->
+                </ul>
+
+                <!-- Answer input -->
+                <form id="answer-form" class="mt-6 flex gap-2">
+                    <input type="text" id="answer" placeholder="Your guess..."
+                        class="flex-grow px-4 py-2 rounded-lg text-black" required>
+                    <button type="submit"
+                        class="bg-green-500 hover:bg-green-600 px-6 py-2 rounded-lg font-semibold">Submit</button>
+                </form>
+
+                <!-- Feedback -->
+                <p id="feedback" class="mt-4 font-semibold"></p>
+            </div>
+        </section>
+
+        <script>
+            // Example riddles (replace with Flask data later)
+            const riddles = {
+                easy: [
+                    { teammates: ["Messi", "Neymar", "Suárez"], answer: "Luis Suárez" },
+                    { teammates: ["Cristiano Ronaldo", "Benzema", "Bale"], answer: "Luka Modric" }
+                ],
+                medium: [
+                    { teammates: ["Gerrard", "Milner", "Núñez"], answer: "Luis Suárez" },
+                    { teammates: ["Xavi", "Iniesta", "Busquets"], answer: "Sergio Busquets" }
+                ],
+                hard: [
+                    { teammates: ["Yaya Touré", "Adebayor", "Fabregas"], answer: "Samir Nasri" }
+                ]
+            };
+
+            let currentRiddle = null;
+
+            // Handle difficulty click
+            document.querySelectorAll(".difficulty-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const difficulty = btn.dataset.difficulty;
+                    const riddle = riddles[difficulty][Math.floor(Math.random() * riddles[difficulty].length)];
+                    currentRiddle = riddle;
+
+                    // Show teammates
+                    const teammatesList = document.getElementById("teammates-list");
+                    teammatesList.innerHTML = "";
+                    riddle.teammates.forEach(t => {
+                        const li = document.createElement("li");
+                        li.textContent = t;
+                        teammatesList.appendChild(li);
+                    });
+
+                    document.getElementById("riddle-section").classList.remove("hidden");
+                    document.getElementById("feedback").textContent = "";
+                    document.getElementById("answer").value = "";
+                });
+            });
+
+            // Handle answer submit
+            document.getElementById("answer-form").addEventListener("submit", (e) => {
+                e.preventDefault();
+                const guess = document.getElementById("answer").value.trim().toLowerCase();
+                const correct = currentRiddle.answer.trim().toLowerCase();
+
+                const normalize = str => str.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // removes accents
+                const feedback = document.getElementById("feedback");
+
+                if (normalize(guess) === normalize(correct)) {
+                    feedback.textContent = "✅ Correct!";
+                    feedback.className = "mt-4 font-semibold text-green-400";
+                } else {
+                    feedback.textContent = `❌ Wrong! Answer was ${currentRiddle.answer}`;
+                    feedback.className = "mt-4 font-semibold text-red-400";
+                }
+            });
+        </script>
+    </body>
+
+</html>
+     <!-- <p id="feedback" class="mt-2"></p> -->
+
+
+     <style>
+
+        /* General focus */
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none !important;
+}
+
+/* Blueprint container */
+.blueprint {
+    color: hsl(0, 0%, 76%);
+    max-width: 90%;
+    width: 400px;
+    background-color: rgba(7, 7, 7, 0.679);
+    justify-content: center;
+    margin: 30px auto;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+/* Buttons group */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+}
+
+.btn-buttons {
+    flex: 1 1 30%;
+    /* Grow/shrink and min width */
+    padding: 8px 12px;
+    font-size: 16px;
+    color: hsl(0, 0%, 76%);
+    border-radius: 5%;
+    border: none;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Riddle box and text */
+.riddle-box {
+    margin: 0 auto 10px;
+    padding: 15px 10px;
+    height: auto;
+    min-height: 100px;
+    background-color: #1d2230;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Scoreboard */
+.sb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0px 15px 20px;
+    border: 1px solid rgb(47, 50, 54);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Controls nav */
+.controls>ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* Progress bar container */
+.pc {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    height: 30px;
+}
+
+/* Input fields */
+.answer-form-input {
+    width: 90%;
+    max-width: 340px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Flash container */
+.flash-container {
+    margin: 0 auto 10px;
+    border-radius: 4%;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 480px) {
+    .btn-buttons {
+        flex: 1 1 45%;
+        /* two buttons per row */
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .riddle-box {
+        font-size: 16px;
+        padding: 10px 8px;
+    }
+
+    .sb {
+        font-size: 14px;
+        padding: 0.5rem;
+    }
+
+    .pc {
+        height: 25px;
+    }
+
+    .answer-form-input {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+}
+     </style>

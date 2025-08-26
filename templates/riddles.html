@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Riddles{% endblock %}
+{% block content %}
+<div class="sb" id="scoreboard">
+    <div id="sb"></div>
+    <nav class="controls" aria-label="Scoreboard controls">
+        <ul>
+            <li>
+                <a href="/" aria-label="Home">
+                    <i id="house" class="fa-solid fa-house shake" style="color:hsl(0, 0%, 76%);" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" aria-label="Restart Game">
+                    <i class="fa-solid fa-arrows-rotate shake" style="color:hsl(0, 0%, 76%);"></i>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown" style="color:hsl(0, 0%, 76%);">
+                    <a class="dropdown-toggle" href="#" id="settingsMenu" data-bs-toggle="dropdown" aria-expanded="false"
+                        aria-label="Settings">
+                        <i class="fa-solid fa-gear" style="color:hsl(0, 0%, 76%);" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsMenu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Preferences</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="rc1">
+    <div id="riddle-box" class="riddle-box">
+    </div>
+    <div id="timer" class="tc"></div>
+    <div class="pc">
+        <div id="progress-bar"></div>
+    </div>
+</div>
+<div class="answer-form">
+    <input class="answer-form-input" type="text" autocomplete="off" id="answer" placeholder="Type player name..." name="answer">
+    <button onclick="submitAnswer()" class="answer-form-btn" type="submit"><b>SUBMIT GUESS</b></button>
+</div>
+<div id="feedback" class="alert flash-container">
+    <button class="flash-btn" data-dismiss="alert" aria-label="Close"></button>   
+</div>
+<input type="hidden" id="difficulty" value="{{ level }}">
+<script>
+    window.addEventListener("load", () => {
+        let level = document.getElementById('difficulty').value;
+        startGame(level);
+    })
+</script>
+
+{% endblock %}
