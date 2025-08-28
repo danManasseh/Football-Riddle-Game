@@ -171,9 +171,9 @@ textarea:focus {
     /* transition: all 1s; */
 }
 /* Responsive adjustments for small screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .blueprint{
-        height: 150vh;
+        height: 350vh;
         padding: 0.75rem;
     }
     .btn-group{

@@ -18,9 +18,7 @@
     <div class="answer-form">
         <form id="answer-form" class="" method="POST" action="{{ url_for('check_answer', get_id = riddle.id ) }}" autocomplete="off">
             <input class="answer-form-input" type="text"  id="answer" placeholder="Type player name..." name="answer" autocomplete="off"
-                required>
-            <!-- <input type="hidden" id="ans_val" name="ans_val" value="{{ riddle.answers | tojson }}"> -->
-        
+                required>        
             <button class="answer-form-btn" type="submit"><b>SUBMIT GUESS</b></button>
         </form>
     </div>
